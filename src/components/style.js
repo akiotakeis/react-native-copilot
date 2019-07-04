@@ -6,7 +6,7 @@ export const STEP_NUMBER_DIAMETER: number = STEP_NUMBER_RADIUS * 2;
 export const ZINDEX: number = 100;
 export const MARGIN: number = 13;
 export const OFFSET_WIDTH: number = 4;
-export const ARROW_SIZE: number = 6;
+export const ARROW_SIZE: number = 12;
 
 export default StyleSheet.create({
   container: {
@@ -26,12 +26,12 @@ export default StyleSheet.create({
     position: 'absolute',
     paddingTop: 15,
     paddingHorizontal: 15,
-    backgroundColor: '#fff',
+    backgroundColor: '#7a9af7',
     borderRadius: 3,
     overflow: 'hidden',
   },
   tooltipText: {
-
+    color: '#ffffff',
   },
   tooltipContainer: {
     flex: 1,
@@ -50,7 +50,7 @@ export default StyleSheet.create({
     borderWidth: 2,
     borderRadius: STEP_NUMBER_RADIUS,
     borderColor: '#FFFFFF',
-    backgroundColor: '#27ae60',
+    backgroundColor: '#7a9af7',
   },
   stepNumberText: {
     fontSize: 10,
@@ -58,13 +58,19 @@ export default StyleSheet.create({
     color: '#FFFFFF',
   },
   button: {
-    padding: 10,
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    backgroundColor: '#7a9af7',
+    borderWidth: 1,
+    borderRadius: 4,
+    borderColor: '#ffffff',
+    marginBottom: 10
   },
   buttonText: {
-    color: '#27ae60',
+    color: '#ffffff',
   },
   bottomBar: {
-    marginTop: 10,
+    marginTop: 5,
     flexDirection: 'row',
     justifyContent: 'flex-end',
   },
